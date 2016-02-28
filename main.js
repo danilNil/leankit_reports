@@ -16,16 +16,38 @@ cardsConverter.on("end_parsed", function (cardsArray) {
 		// 3. джойним с card description
 		// 3. суммируем количество пойнтов
 
-		var startDate = new Date('2016-02-15');
+		var startDate = new Date('2015-11-01');
 		var endDate = new Date('2016-02-21');
-		var finishedLine = 'Ready for UAT: BG 2.9';
-		var finishedByWeek = findCardsInTimeRangeAndColumn(startDate, endDate, finishedLine, historyArray);
-	  console.log(finishedByWeek.length); //here is your result jsonarray 
+		getWeeklyStats(startDate, historyArray);
 
 	});
 
 });
  
+function getWeeklyStats(startDate, historyArray) {
+		// var finishedLine = 'Quality Assurance: Done';
+		var finishedLine = 'Ready for UAT: BG 2.9';
+		var currentDate = startDate;
+		var i = 0;
+		var days = 7;
+		var now = new Date();
+		while(currentDate<=now){
+			
+			var endDate = new Date(currentDate);
+    	endDate.setDate(endDate.getDate() + days);
+			console.log(currentDate);
+			console.log(endDate);
+			
+			var finishedByWeek = findCardsInTimeRangeAndColumn(currentDate, endDate, finishedLine, historyArray);
+			finishedByWeek = _.uniqBy(finishedByWeek, 'Card Id');
+			// console.log(finishedByWeek);
+	  	console.log(i + ':' + finishedByWeek.length); //here is your result jsonarray 
+			currentDate = new Date(endDate);
+			i++;
+		}
+		
+}
+
  function findCardsInTimeRangeAndColumn(startDate, endDate, columnName, historyArray) {
  	return _.filter(historyArray, function(o) {
  		var currentDate = o.When.toLowerCase();
@@ -33,10 +55,11 @@ cardsConverter.on("end_parsed", function (cardsArray) {
  		var toLane = 'To Lane';
 		var whenDate = new Date(moment(currentDate, 'MM/DD/YYYY [at] hh:mm:ss A').format());
 		var correctDate = false;
-		console.log(o[toLane]);
+		// console.log(o);
  		if(whenDate>=startDate && whenDate <=endDate)
  			correctDate = true; 
  		if(correctDate && o[toLane] === columnName){
+ 			// console.log(o['Card Id']);
  			return true;
  		}else{
  			return false;
