@@ -13,39 +13,79 @@ cardsConverter.on("end_parsed", function (cardsArray) {
 		// посчитать время за которое мы делаем N задач. За неделю мы делаем столько то пойнтов
 		// 1. находим все карты, перешедшие в Ready for UAT за неделю
 		// 2. оставляем только уникальные
-		// 3. джойним с card description
-		// 3. суммируем количество пойнтов
+		// 3. фильтруем по полям карточек
 
-		var startDate = new Date('2015-11-01');
-		var endDate = new Date('2016-02-21');
-		getWeeklyStats(startDate, historyArray);
+		var startDate = new Date('2016-07-11');
+		var results = getStatsForTimePeriod(1,startDate, historyArray);
+		console.log(results);
+		var filteredResults  = customFilter(results, cardsArray);
 
+		filteredResults = addCreatedDateForCards(filteredResults, historyArray);
+		console.log("=================================");
+		//console.log(filteredResults);
+		_.each(filteredResults, function(item, key) {
+			console.log(item.Card + ", " + item['Finished at day']);
+		})
+		
 	});
 
 });
+
+
+function customFilter(results, cardsArray) {
+ 	// console.log(cardsArray[0]);
+ 	// console.log(results[0]);
+ 	
+	var filteredResults = _.filter(results, function(card) {
+		var cardDesc = cardDescriptionById(card['Card Id'], cardsArray);
+		return cardMatchesFilter(cardDesc);
+	});
+	
+ 	return filteredResults;
+ }
+
+ function cardMatchesFilter(cardDesc) {
+ 	var matched = false;
+ 	if(cardDesc.Card_Type === 'UAT Feedback' && cardDesc.Card_Priority === 'Critical'){
+ 		matched = true;
+ 	}
+
+ 	return matched;
+ }
  
-function getWeeklyStats(startDate, historyArray) {
-		// var finishedLine = 'Quality Assurance: Done';
-		var finishedLine = 'Ready for UAT: BG 2.9';
-		var currentDate = startDate;
-		var i = 0;
-		var days = 7;
-		var now = new Date();
-		while(currentDate<=now){
-			
-			var endDate = new Date(currentDate);
-    	endDate.setDate(endDate.getDate() + days);
-			console.log(currentDate);
-			console.log(endDate);
-			
-			var finishedByWeek = findCardsInTimeRangeAndColumn(currentDate, endDate, finishedLine, historyArray);
-			finishedByWeek = _.uniqBy(finishedByWeek, 'Card Id');
-			// console.log(finishedByWeek);
-	  	console.log(i + ':' + finishedByWeek.length); //here is your result jsonarray 
-			currentDate = new Date(endDate);
-			i++;
-		}
+ function cardDescriptionById(cardId, cardsArray) {
+ 	var result = _.find(cardsArray, ['Card_Id', cardId]);
+ 	return result;
+ }
+
+function getStatsForTimePeriod(numOfDays,startDate, historyArray) {
+	var result = [];
+	var finishedLine = 'UAT: Ready for UAT';
+	var currentDate = startDate;
+	var i = 0;
+	var now = new Date();
+	// while(currentDate<=now){
 		
+		var endDate = new Date(currentDate);
+		endDate.setDate(endDate.getDate() + numOfDays);
+		console.log(currentDate);
+		console.log(endDate);
+		
+		var finished = findCardsInTimeRangeAndColumn(currentDate, endDate, finishedLine, historyArray);
+		finished = _.uniqBy(finished, 'Card Id');
+  		console.log(i + ':' + finished.length);
+  		if(finished.length>0){
+  			finished = _.map(finished, function(o) {
+  				o['Finished at day'] = i;	
+  				return o;
+  			});	  		
+	  		result = _.concat(result, finished);	
+  		}
+  		
+		currentDate = new Date(endDate);
+		i++;
+	// }
+	return result;
 }
 
  function findCardsInTimeRangeAndColumn(startDate, endDate, columnName, historyArray) {
@@ -67,6 +107,10 @@ function getWeeklyStats(startDate, historyArray) {
  	});
  }
 
+ function addCreatedDateForCards(cards, historyArray) {
+ 	return cards
+ }
+
 //read from file 
-require("fs").createReadStream("./cards.csv").pipe(cardsConverter);
+require("fs").createReadStream("./cards (6).csv").pipe(cardsConverter);
 require("fs").createReadStream("./eventsexport.csv").pipe(historyConverter);
