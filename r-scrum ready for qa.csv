@@ -1,0 +1,36 @@
+"Card Name","Estimate","Date added","Finished at day"
+"1684 Creative Details: All creative allowed to be set to inactive regardless of ad group status",1,0,0
+"1628 Action Create Form: Creating Action Before Site has been set up",2,0,0
+"1508 Ad Group Keyword - MALT not removing keyword from Simpli.fi",3,0,1
+"1684 Creative Details: All creative allowed to be set to inactive regardless of ad group status",1,0,1
+"1631 Action Create Form: Revenue on Actions Validation Wrong",1,0,2
+"1579 Creative Create Wizrd\t: Unclear Error - Creative Upload error not sufficient",2,0,2
+"1666 Ad Group Profile Page / Ad Group Create Wizard: Ad Group Settings - Edit Ad Group Buying Strategy",3,0,2
+"1247 Ad Group Create Wizard: \tBuying Strategy - OBA Compliance Missing",2,0,2
+"1677 Ad Group Keywords: Keyword list not uploading",3,0,2
+"1762 Keyword Metrics: Keyword Filter not totoling impressions correctly",2,0,2
+"1456 Ad Group Keywords: Number of Keywords Displaying Error",1,0,2
+"1508 Ad Group Keyword - MALT not removing keyword from Simpli.fi",3,0,2
+"1678 Ad Group Keywords: Keyword Upload unable to replace all",4,0,3
+"1541 Advertiser 3rd Party Tags Create Form: Site Retargeting Pixel Referencing MV account # incorrectly",2,0,3
+"1845 Missing Total Data Cost",5,2,4
+"1763 Keyword filtering : CPM not metric not appearing on screen",2,0,4
+"1663 Advertiser Profile Page: Invoice Not Syncing Up to Profile",3,0,4
+"1540 Ad Group Targeting - Locations: Geotargeting: MALT & SF Differ",3,0,4
+"1522 Edit - DSP not updating after MALT change",2,0,4
+"1523 Edit - CRCs - DSP not updating correctly",2,0,4
+"1685 Creative Create Wizard: Field Change on Simpli.fi Creative Records",5,0,4
+"1842 Costs Shown wrong",2,2,4
+"1847 Auto-populate segment list view for advertiser segments",1,2,4
+"1548 Ad Group Targeting - Locations: Geofencing Issue",4,"unknown date","unfinished"
+"1743 Ad Group Targeting - Locations Targeting: Radius Tageting Edit - Not all cities saving",3,"unknown date","unfinished"
+"1521 DSP Update Failure",5,"unknown date","unfinished"
+"1573 Creative Create Wizard: SimpliFi UI - Ads Preview not working when image loaded through MALT",2,"unknown date","unfinished"
+"1837 Audit Log: Audit table log - does not provide sources for entity relationship",0,"unknown date","unfinished"
+"1535 Ad Group Targeting - Locations: Edit - Postal Codes - Zipcodes not saving to Simpli.fi",3,"unknown date","unfinished"
+"1546 Ad Group Targeting - Locations:  Edit - DMA Issue not working with Simpli.fi",5,"unknown date","unfinished"
+"1516 Ad Group Targeting - Locations: \tEdit - Selected DMAs are not displaying in Sifi",3,"unknown date","unfinished"
+"1547 Ad Group Targeting - Locations: DMAs not pushing to Simpli.fi correctly",5,"unknown date","unfinished"
+"1559 Ad Group Targeting - Locations: ad group targeting Geo Error",7,"unknown date","unfinished"
+"1731 Creative Edit/Details Form: Need Tracking Button Added to Creative Clickthrough URLs",3,"unknown date","unfinished"
+"1682 Ad Group Targeting - Locations : Edit - Geotargets not saving",5,"unknown date","unfinished"
