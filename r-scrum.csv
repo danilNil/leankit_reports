@@ -1,89 +1,112 @@
-"Card Name","Estimate","Date added","Finished at day"
-"1684 Creative Details: All creative allowed to be set to inactive regardless of ad group status",1,0,0
-"1628 Action Create Form: Creating Action Before Site has been set up",2,0,0
-"1508 Ad Group Keyword - MALT not removing keyword from Simpli.fi",3,0,1
-"1684 Creative Details: All creative allowed to be set to inactive regardless of ad group status",1,0,1
-"1631 Action Create Form: Revenue on Actions Validation Wrong",1,0,2
-"1579 Creative Create Wizrd\t: Unclear Error - Creative Upload error not sufficient",2,0,2
-"1666 Ad Group Profile Page / Ad Group Create Wizard: Ad Group Settings - Edit Ad Group Buying Strategy",3,0,2
-"1247 Ad Group Create Wizard: \tBuying Strategy - OBA Compliance Missing",2,0,2
-"1677 Ad Group Keywords: Keyword list not uploading",3,0,2
-"1762 Keyword Metrics: Keyword Filter not totoling impressions correctly",2,0,2
-"1456 Ad Group Keywords: Number of Keywords Displaying Error",1,0,2
-"1508 Ad Group Keyword - MALT not removing keyword from Simpli.fi",3,0,2
-"1678 Ad Group Keywords: Keyword Upload unable to replace all",4,0,3
-"1541 Advertiser 3rd Party Tags Create Form: Site Retargeting Pixel Referencing MV account # incorrectly",2,0,3
-"1663 Advertiser Profile Page: Invoice Not Syncing Up to Profile",3,0,4
-"1882 Advertiser Profile Page  Qucik View Stats Reporting: CTR is not being displayed correctly",1,3,4
-"1668 Ad Group Settings - Budget: \tAdd Recency Field",2,0,4
-"1538 Ad Group 3rd party Tags List View: \tAd Group 3rd Party Tags List View - Can push just an Opt-out pixel",2,0,4
-"1461 Advertiser Domain List: \tNew Domain Add - Domains cannot have spaces",2,0,4
-"1845 Missing Total Data Cost",5,2,4
-"1763 Keyword filtering : CPM not metric not appearing on screen",2,0,4
-"1540 Ad Group Targeting - Locations: Geotargeting: MALT & SF Differ",3,0,4
-"1522 Edit - DSP not updating after MALT change",2,0,4
-"1523 Edit - CRCs - DSP not updating correctly",2,0,4
-"1685 Creative Create Wizard: Field Change on Simpli.fi Creative Records",5,0,4
-"1842 Costs Shown wrong",2,2,4
-"1847 Auto-populate segment list view for advertiser segments",1,2,4
-"1885 Ad Group - Edit Keywords - Paste Keywords: Ad Group Paste Keyword is Autocorrecting words",1,3,7
-"1851 Trade Desk Create Form: Campaign name being cutoff",1,2,7
-"1849 Change Default Sort",2,2,7
-"1844 Missing Last Updated and User Fields",1,2,7
-"1563 Ad Group Targeting - Locations: Removing Worldwide Restriction",3,0,7
-"1548 Ad Group Targeting - Locations: Geofencing Issue",4,"unknown date","unfinished"
-"1743 Ad Group Targeting - Locations Targeting: Radius Tageting Edit - Not all cities saving",3,"unknown date","unfinished"
-"1535 Ad Group Targeting - Locations: Edit - Postal Codes - Zipcodes not saving to Simpli.fi",3,"unknown date","unfinished"
-"1546 Ad Group Targeting - Locations:  Edit - DMA Issue not working with Simpli.fi",5,"unknown date","unfinished"
-"1547 Ad Group Targeting - Locations: DMAs not pushing to Simpli.fi correctly",5,"unknown date","unfinished"
-"1904 Ad Group - Targeting - Locations: Geotargeting change",0,"unknown date","unfinished"
-"1516 Ad Group Targeting - Locations: \tEdit - Selected DMAs are not displaying in Sifi",3,"unknown date","unfinished"
-"1682 Ad Group Targeting - Locations : Edit - Geotargets not saving",5,"unknown date","unfinished"
-"1889 TradeDesk Creative Bundle - Add Creative (Video): Error Uploading Video to TradeDesk Creative Bundle",0,"unknown date","unfinished"
-"1852 Budget Estimator shouldn't have MALT URL",1,"unknown date","unfinished"
-"1839 Last Updated Field Incorrectly Defined",3,"unknown date","unfinished"
-"1542 Ad Group Targeting - Locations: Geo Fence / Target Switch not saving correctly",4,"unknown date","unfinished"
-"1836 SMUI-Image 1/#4: Rules table and addition should be on edit page of segment",2,"unknown date","unfinished"
-"1835 SMUI-Image 1/#2: add Tab with table of ad groups using segment",5,"unknown date","unfinished"
-"1855 Item Price sdisplayed hould not be changed by the discount",2,"unknown date","unfinished"
-"1854 Line Discount Missing from some targets",2,"unknown date","unfinished"
-"1884 Ad Group settings: Should not allow Ad GRP changed to Active when Campaign is Inactive.",1,"unknown date","unfinished"
-"1827 SMUI-Image 3/#1: Change list of sites to list of URLs",1,"unknown date","unfinished"
-"1853 Discount Field Validation",1,"unknown date","unfinished"
-"1731 Creative Edit/Details Form: Need Tracking Button Added to Creative Clickthrough URLs",3,"unknown date","unfinished"
-"1573 Creative Create Wizard: SimpliFi UI - Ads Preview not working when image loaded through MALT",2,"unknown date","unfinished"
-"1559 Ad Group Targeting - Locations: ad group targeting Geo Error",7,"unknown date","unfinished"
-"1521 DSP Update Failure",5,"unknown date","unfinished"
-"1572 Ad Group Targeting - IP Targeting: Company/Domain - Overlapping IP with different domain not overwriting",3,"unknown date","unfinished"
-"1888 Trade Desk Creative Upload: Trade Desk Video Upload Error",0,"unknown date","unfinished"
-"1748 Ad Group Create Wizard:\tView Through and Click Through Value not changing",1,"unknown date","unfinished"
-"1683 Ad Group 3rd Party Tags List View: Inactivated Segment Not Being Pulled from Simpli.fi",2,"unknown date","unfinished"
-"1558 Ad Group Targeting - Locations: Ad Group Targeting - Locations",2,"unknown date","unfinished"
-"1739 Ad Group Targeting - Locations Targeting: Radius targeting number count changes",4,"unknown date","unfinished"
-"1740 Ad Group Targeting - Locations Targeting: Mismatched radius search results",0,"unknown date","unfinished"
-"1741 Ad Group Targeting - Location Targeting: Radius Targeting - Radius Selections differ between MALT and SImpli.fi",0,"unknown date","unfinished"
-"1742 Ad Group Targeting - Location Targeting: Simpli.fi Radius Targeting - Location Error",0,"unknown date","unfinished"
-"1637 TradeDesk UI: TradeDesk: Household Extension Enabled",2,"unknown date","unfinished"
-"1789 CBE-Image 1/#2: Add Account Name and Account Number to Budget Estimator",2,"unknown date","unfinished"
-"1823 Confirmation of Association Segment List View Fields",1,"unknown date","unfinished"
-"1819 SMUI-Image 1/#3: Add Fields to table list view",3,"unknown date","unfinished"
-"1825 SMUI-Image 1/#2: Segments should not be able to be deleted.",7,"unknown date","unfinished"
-"1826 SMUI-Image 1/#4: Rules should be deactivated, not deleted.",7,"unknown date","unfinished"
-"1829 ​SMUI-Image 1/#2: Correct Styling to match MALT",0,"unknown date","unfinished"
-"1830 Image 3/#2&3: Don't give option for opt-in and opt-out at same time",5,"unknown date","unfinished"
-"1831 SMUI-Image 1/#4: Edit button of Rules and Segments should be off of hyperlink name of rule instead of button",1,"unknown date","unfinished"
-"1833 Confirmation of Association Segment Create Form Fields",2,"unknown date","unfinished"
-"1840 Segment Rules not creating",0,"unknown date","unfinished"
-"1841 Missing Cost Fields",0,"unknown date","unfinished"
-"1843 Filter down site list to just those owned by association",2,"unknown date","unfinished"
-"1737 Ad Group Settings - Buying Strategy: CTR Settings are Not Showing on Settings Summary or Simpli.fi",0,"unknown date","unfinished"
-"1902 Simpli.Fi Ad Group Add Creative Window: Facebook SimpliFi Campaign Upload Not Successful",0,"unknown date","unfinished"
-"1846 Forecasting values not working",0,"unknown date","unfinished"
-"1887 Advertiser Settings: Server Error when Inactivateing an Acitve state Advertiser.",1,"unknown date","unfinished"
-"1903 Simpli.fi Radius Targeting Bundle: Simpli.fi Location - Radius Targeting error",0,"unknown date","unfinished"
-"1905 Ad group Creation : Ad group creation",0,"unknown date","unfinished"
-"1901 Ad Group Settings Simplifi: Ad Group Server Error when changing Status to Active",0,"unknown date","unfinished"
-"1569 Creatives Create Wizard: No Preview available in Add Creative Summary",2,"unknown date","unfinished"
-"1632 Actions Edit Form: Action Pixel Generating Wrong CID",2,"unknown date","unfinished"
-"1837 Audit Log: Audit table log - does not provide sources for entity relationship",0,"unknown date","unfinished"
-"1834 Confirmation of Association Segment List View Search Bar",3,"unknown date","unfinished"
+"ID","Card Name","Estimate","Date added","Finished at day"
+1247,"Ad Group Create Wizard: \tBuying Strategy - OBA Compliance Missing",2,0,2
+1456,"Ad Group Keywords: Number of Keywords Displaying Error",1,0,2
+1461,"Advertiser Domain List: \tNew Domain Add - Domains cannot have spaces",2,0,4
+1508,"Ad Group Keyword - MALT not removing keyword from Simpli.fi",3,0,1
+1508,"Ad Group Keyword - MALT not removing keyword from Simpli.fi",3,0,2
+1516,"Ad Group Targeting - Locations: \tEdit - Selected DMAs are not displaying in Sifi",3,0,9
+1521,"DSP Update Failure",5,0,10
+1522,"Edit - DSP not updating after MALT change",2,0,4
+1523,"Edit - CRCs - DSP not updating correctly",2,0,4
+1535,"Ad Group Targeting - Locations: Edit - Postal Codes - Zipcodes not saving to Simpli.fi",3,0,9
+1538,"Ad Group 3rd party Tags List View: \tAd Group 3rd Party Tags List View - Can push just an Opt-out pixel",2,0,4
+1540,"Ad Group Targeting - Locations: Geotargeting: MALT & SF Differ",3,0,4
+1541,"Advertiser 3rd Party Tags Create Form: Site Retargeting Pixel Referencing MV account # incorrectly",2,0,3
+1542,"Ad Group Targeting - Locations: Geo Fence / Target Switch not saving correctly",4,0,8
+1542,"Ad Group Targeting - Locations: Geo Fence / Target Switch not saving correctly",4,0,9
+1546,"Ad Group Targeting - Locations:  Edit - DMA Issue not working with Simpli.fi",5,"unknown date","unfinished"
+1547,"Ad Group Targeting - Locations: DMAs not pushing to Simpli.fi correctly",5,"unknown date","unfinished"
+1548,"Ad Group Targeting - Locations: Geofencing Issue",4,"unknown date","unfinished"
+1558,"Ad Group Targeting - Locations: Ad Group Targeting - Locations",2,"unknown date","unfinished"
+1559,"Ad Group Targeting - Locations: ad group targeting Geo Error",7,0,10
+1563,"Ad Group Targeting - Locations: Removing Worldwide Restriction",3,0,7
+1569,"Creatives Create Wizard: No Preview available in Add Creative Summary",2,0,10
+1569,"Creatives Create Wizard: No Preview available in Add Creative Summary",2,0,11
+1572,"Ad Group Targeting - IP Targeting: Company/Domain - Overlapping IP with different domain not overwriting",3,0,8
+1572,"Ad Group Targeting - IP Targeting: Company/Domain - Overlapping IP with different domain not overwriting",3,0,9
+1579,"Creative Create Wizrd\t: Unclear Error - Creative Upload error not sufficient",2,0,2
+1628,"Action Create Form: Creating Action Before Site has been set up",2,0,0
+1631,"Action Create Form: Revenue on Actions Validation Wrong",1,0,2
+1632,"Actions Edit Form: Action Pixel Generating Wrong CID",2,"unknown date","unfinished"
+1663,"Advertiser Profile Page: Invoice Not Syncing Up to Profile",3,0,4
+1666,"Ad Group Profile Page / Ad Group Create Wizard: Ad Group Settings - Edit Ad Group Buying Strategy",3,0,2
+1668,"Ad Group Settings - Budget: \tAdd Recency Field",2,0,4
+1677,"Ad Group Keywords: Keyword list not uploading",3,0,2
+1678,"Ad Group Keywords: Keyword Upload unable to replace all",4,0,3
+1682,"Ad Group Targeting - Locations : Edit - Geotargets not saving",5,0,9
+1683,"Ad Group 3rd Party Tags List View: Inactivated Segment Not Being Pulled from Simpli.fi",2,0,10
+1684,"Creative Details: All creative allowed to be set to inactive regardless of ad group status",1,0,0
+1684,"Creative Details: All creative allowed to be set to inactive regardless of ad group status",1,0,1
+1685,"Creative Create Wizard: Field Change on Simpli.fi Creative Records",5,0,4
+1731,"Creative Edit/Details Form: Need Tracking Button Added to Creative Clickthrough URLs",3,"unknown date","unfinished"
+1743,"Ad Group Targeting - Locations Targeting: Radius Tageting Edit - Not all cities saving",3,"unknown date","unfinished"
+1762,"Keyword Metrics: Keyword Filter not totoling impressions correctly",2,0,2
+1763,"Keyword filtering : CPM not metric not appearing on screen",2,0,4
+1789,"CBE-Image 1/#2: Add Account Name and Account Number to Budget Estimator",2,"unknown date",13
+1819,"SMUI-Image 1/#3: Add Fields to table list view",3,"unknown date","unfinished"
+1823,"Confirmation of Association Segment List View Fields",1,"unknown date","unfinished"
+1825,"SMUI-Image 1/#2: Segments should not be able to be deleted.",7,"unknown date","unfinished"
+1827,"SMUI-Image 3/#1: Change list of sites to list of URLs",1,"unknown date","unfinished"
+1830,"Image 3/#2&3: Don't give option for opt-in and opt-out at same time",5,"unknown date","unfinished"
+1833,"Confirmation of Association Segment Create Form Fields",2,"unknown date","unfinished"
+1834,"Confirmation of Association Segment List View Search Bar",3,"unknown date",9
+1834,"Confirmation of Association Segment List View Search Bar",3,"unknown date",10
+1834,"Confirmation of Association Segment List View Search Bar",3,"unknown date",11
+1835,"SMUI-Image 1/#2: add Tab with table of ad groups using segment",5,"unknown date",10
+1836,"SMUI-Image 1/#4: Rules table and addition should be on edit page of segment",2,"unknown date",9
+1837,"Audit Log: Audit table log - does not provide sources for entity relationship",3,1,8
+1837,"Audit Log: Audit table log - does not provide sources for entity relationship",3,1,9
+1839,"Last Updated Field Incorrectly Defined",3,1,10
+1840,"Segment Rules not creating",3,1,10
+1841,"Missing Cost Fields",3,1,12
+1842,"Costs Shown wrong",2,1,4
+1844,"Missing Last Updated and User Fields",1,1,7
+1845,"Missing Total Data Cost",5,1,4
+1847,"Auto-populate segment list view for advertiser segments",1,1,4
+1849,"Change Default Sort",2,1,7
+1851,"Trade Desk Create Form: Campaign name being cutoff",1,1,7
+1853,"Discount Field Validation",1,1,14
+1854,"Line Discount Missing from some targets",2,1,14
+1855,"Item Price should not be changed by the discount",2,1,14
+1882,"Advertiser Profile Page  Qucik View Stats Reporting: CTR is not being displayed correctly",1,2,4
+1884,"Ad Group settings: Should not allow Ad GRP changed to Active when Campaign is Inactive.",1,2,8
+1884,"Ad Group settings: Should not allow Ad GRP changed to Active when Campaign is Inactive.",1,2,9
+1885,"Ad Group - Edit Keywords - Paste Keywords: Ad Group Paste Keyword is Autocorrecting words",1,2,7
+1887,"Advertiser Settings: Server Error when Inactivateing an Acitve state Advertiser.",1,2,14
+1888,"Trade Desk Creative Upload: Trade Desk Video Upload Error",2,3,7
+1889,"TradeDesk Creative Bundle - Add Creative (Video): Error Uploading Video to TradeDesk Creative Bundle",2,3,7
+1901,"Ad Group Settings Simplifi: Ad Group Server Error when changing Status to Active",1,4,10
+1901,"Ad Group Settings Simplifi: Ad Group Server Error when changing Status to Active",1,4,11
+1904,"Ad Group - Targeting - Locations: Geotargeting change",5,4,9
+1921,"Ad Group Create Wizard - Non Editable Defaults: \tThe Trade Desk Dayparting Default - Continue bidding with adjustment of 1.0",1,8,9
+1923,"Ad Group Targeting - Locations: Not Able to Select Cities and Postal Codes at the same time",3,8,9
+1926,"Creative Create Wizard: \tVideo Upload Fails in Simpli.Fi Campaigns",3,8,8
+1928,"Ad Group Targeting - Dayparting: Targeting Time or Day Parting",2,8,9
+1930,"Campaign Create Wizard: Decimals included on Impression Cap",2,8,9
+1931,"Change calculating CPM",2,8,9
+1931,"Change calculating CPM",2,8,10
+1932,"Ad Group Keywords: Keyword Paste Error",3,"unknown date","unfinished"
+1936,"Ad Group Settings - Budget: \tSimpli.Fi Ad Group Frequency Cap Change Not Updating",1,8,9
+1937,"Ad Group Targeting - Viewability: SimpliFi Ad Group Viewability threshold not updating",1,8,10
+1940,"Creative Create Wizard: Flash Upload in Simplifi Campaign Not Displaying Correctly",3,8,10
+1940,"Creative Create Wizard: Flash Upload in Simplifi Campaign Not Displaying Correctly",3,8,11
+1941,"Ad Group Keywords: All Keywords Deactivated - Ad Group still Active & No Error Received",3,8,10
+1943,"Ad Group Create Wizard - Budget: Ad Group Creation Daily Budget Autocomplete Error",0,8,11
+1945,"Trade Desk Ad Group Bundle: \tInventory all selected",2,8,9
+1946,"Ad Group Targeting - Dayparting: 6 hour change to universal time_Daypartying",2,8,9
+1947,"Ad Group Keywords: \tKeyword Upload unable to replace all",1,8,10
+1955,"Creative List View: \tSpend dollar amount not formated correctly",2,9,9
+1960,"Ad Group Create Wizard: Ad Group CTR Campaign Goal Error",3,9,10
+1960,"Ad Group Create Wizard: Ad Group CTR Campaign Goal Error",3,9,11
+1961,"Remove options list for search tags",2,10,14
+1964,"Change pricing for 1st and 2nd party segments",0,"unknown date","unfinished"
+1969,"Creative Create Wizard:  Trade Desk Creative - Third Party Placement Tag Errors",3,10,11
+1983,"Ad Group Create Wizard: Budget Step - Add disclaimer text to form",4,10,14
+1985,"Return Segment management UI sorting to Name and set default sort for ab as Uniquies, desc",0,11,14
+1987,"Remove space between Item price label and",0,"unknown date","unfinished"
+1988,"Audit Table: Audit table does not log rule or segment creation",0,11,14
+1989,"Deleting rules",0,"unknown date","unfinished"
+1995,"Change Data cost calculating logic",0,"unknown date","unfinished"
+1996,"Change parameters sent to backend to calculate data cost",0,"unknown date","unfinished"
+1997,"Change calculating item price",0,"unknown date","unfinished"
+1998,"Add TD_Shared field on admin bb page",0,"unknown date","unfinished"

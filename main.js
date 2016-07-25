@@ -28,7 +28,7 @@ cardsConverter.on("end_parsed", function (cardsArray) {
 		var startDate = new Date('2016-07-11');
 		var results = getFinishedCardsForTimePeriod(1, startDate, historyArray, 'TT Quality Assurance: Ready for QA');
 		// var results = getFinishedCardsForTimePeriod(1, startDate, historyArray, 'UAT: Ready for UAT');
-		console.log(results);
+		// console.log(results);
 		var joinedResults = joinCardsWithDescription(results, cardsArray);
 		// console.log(joinedResults);
 
@@ -50,15 +50,17 @@ cardsConverter.on("end_parsed", function (cardsArray) {
 
 		var exportArray = _.map(filteredResults, function(item, key) {
 			return {
-				'Card Name': item.ExternalCardID + ' ' + item.Card_Title,
+				'ID': item.ExternalCardID,
+				'Card Name': item.Card_Title,
 				'Estimate': item.Card_Size,
 				'Date added': item['Date added'],
 				'Finished at day': item['Finished at day']
 			};
 		});
-		//console.log(exportArray);
+		exportArray = _.sortBy(exportArray, 'ID');
+		// console.log(exportArray);
 		var fs = require('fs');
-		var fields = ['Card Name', 'Estimate', 'Date added', 'Finished at day'];
+		var fields = ['ID', 'Card Name', 'Estimate', 'Date added', 'Finished at day'];
 		
 		var csv = json2csv({ data: exportArray, fields: fields });
 
@@ -102,7 +104,7 @@ function getBackLog(cardsArray) {
 
  function isCardUdone(lineTitle) { //TODO: merge with cardMatchesFilter
  	if(lineTitle === 'backlog:uat feedback' || lineTitle === 'sprint log' || lineTitle === 'development:in progress' || lineTitle === 'development:review'){
- 		console.log('???lineTitle: ', lineTitle)
+ 		// console.log('???lineTitle: ', lineTitle)
  		return true;
  	}
  	return false;
@@ -173,7 +175,7 @@ function getFinishedCardsForTimePeriod(numOfDays,startDate, historyArray, finish
  		if(whenDate>=startDate && whenDate <=endDate)
  			correctDate = true; 
  		if(correctDate && o[toLane] === columnName){
- 			console.log(o['Card Id']);
+ 			// console.log(o['Card Id']);
  			return true;
  		}else{
  			return false;
@@ -187,13 +189,15 @@ function getFinishedCardsForTimePeriod(numOfDays,startDate, historyArray, finish
  		var momentDate =  moment(createdDate, 'MM/DD/YYYY [at] hh:mm:ss A');
  		if(momentDate.isValid()){
  			var createdDateObject = new Date(momentDate.format());
- 			console.log('???????? createdDateObject:', createdDateObject);
+ 			// console.log('???????? createdDateObject:', createdDateObject);
  			var timeDiff = createdDateObject.getTime() - startDate.getTime();
 			var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+			diffDays = diffDays-1;
 			if(diffDays<0){
 				diffDays = 0;
 			}
-			console.log(diffDays);
+			// console.log(card.ExternalCardID);
+			// console.log(diffDays);
  			card['Date added'] = diffDays;
  		}else{
  			card['Date added'] = 'unknown date';
@@ -224,5 +228,5 @@ function joinCardsWithDescription(results, cardsDesc) {
 }
 
 //read from file 
-require("fs").createReadStream("./cards (7).csv").pipe(cardsConverter);
-require("fs").createReadStream("./eventsexport (2).csv").pipe(historyConverter);
+require("fs").createReadStream("./cards.csv").pipe(cardsConverter);
+require("fs").createReadStream("./eventsexport.csv").pipe(historyConverter);
