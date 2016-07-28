@@ -1,0 +1,28 @@
+{
+  "name": "leankit_reports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "csvtojson": "^0.5.2",
+    "json-2-csv": "^2.0.22",
+    "json2csv": "^3.6.1",
+    "moment": "^2.11.2",
+    "lodash": "^4.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://danilNil@github.com/danilNil/leankit_reports.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danilNil/leankit_reports/issues"
+  },
+  "homepage": "https://github.com/danilNil/leankit_reports#readme"
+}
